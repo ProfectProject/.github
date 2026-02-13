@@ -9,8 +9,6 @@
 [![GitHub followers](https://img.shields.io/github/followers/ProfectProject?style=social)](https://github.com/ProfectProject)
 [![GitHub stars](https://img.shields.io/github/stars/ProfectProject?style=social)](https://github.com/ProfectProject)
 
-
-
 </div>
 
 ---
@@ -25,6 +23,81 @@ ProfectProject는 현대적인 클라우드 네이티브 애플리케이션을 �
 - **품질**: 높은 코드 품질과 테스트 커버리지 유지
 - **협업**: 오픈소스 커뮤니티와의 적극적인 협업
 - **학습**: 지속적인 학습과 지식 공유
+
+---
+
+## 👥 팀
+
+### Core Team
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/NewOld21">
+        <img src="https://github.com/NewOld21.png" width="100px;" alt=""/>
+        <br />
+        <sub><b>김세헌</b></sub>
+      </a>
+      <br />
+      <sub>Backend</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/yeon35">
+        <img src="https://github.com/yeon35.png" width="100px;" alt=""/>
+        <br />
+        <sub><b>김리연</b></sub>
+      </a>
+      <br />
+      <sub>DevOps</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Roy-wonji">
+        <img src="https://github.com/Roy-wonji.png" width="100px;" alt=""/>
+        <br />
+        <sub><b>서원지</b></sub>
+      </a>
+      <br />
+      <sub>Full Stack</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/cheayoungg">
+        <img src="https://github.com/cheayoungg.png" width="100px;" alt=""/>
+        <br />
+        <sub><b>오채영</b></sub>
+      </a>
+      <br />
+      <sub>Backend / DevOps</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/CyberBoarder">
+        <img src="https://github.com/CyberBoarder.png" width="100px;" alt=""/>
+        <br />
+        <sub><b>이준범</b></sub>
+      </a>
+      <br />
+      <sub>DevOps</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/hjp1016">
+        <img src="https://github.com/hjp1016.png" width="100px;" alt=""/>
+        <br />
+        <sub><b>홍준표</b></sub>
+      </a>
+      <br />
+      <sub>DevOps</sub>
+    </td>
+  </tr>
+</table>
+
+### Contributors
+
+모든 기여자분들께 감사드립니다! 🙏
+
+<a href="https://github.com/ProfectProject/popcorn_msa/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ProfectProject/popcorn_msa" />
+</a>
 
 ---
 
@@ -80,7 +153,6 @@ Kubernetes 배포 자동화 및 GitOps
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 ![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=for-the-badge&logo=argo&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
 ![Loki](https://img.shields.io/badge/Loki-F46800?style=for-the-badge&logo=grafana&logoColor=white)
 ![Tempo](https://img.shields.io/badge/Tempo-F46800?style=for-the-badge&logo=grafana&logoColor=white)
 ![Mimir](https://img.shields.io/badge/Mimir-F46800?style=for-the-badge&logo=grafana&logoColor=white)
@@ -104,29 +176,29 @@ Kubernetes 배포 자동화 및 GitOps
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                        사용자                                 │
+│                        사용자                                │
 └─────────────────────────────────────────────────────────────┘
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                    AWS Route53 + ACM                        │
-│                  (goormpopcorn.shop)                        │
+│                    AWS Route53 + ACM                         │
+│                  (goormpopcorn.shop)                         │
 └─────────────────────────────────────────────────────────────┘
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                  Application Load Balancer                  │
-│                    (SSL Termination)                        │
+│                  Application Load Balancer                   │
+│                    (SSL Termination)                         │
 └─────────────────────────────────────────────────────────────┘
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                      EKS Cluster                            │
-│  ┌──────────────┐  ┌──────────────┐  ┌───────────────┐      │
-│  │   Frontend   │  │   Gateway    │  │  Services     │      │
-│  │   (Next.js)  │  │ (Spring GW)  │  │(Microservices)│      │
-│  └──────────────┘  └──────────────┘  └───────────────┘      │
-│                                                             │
+│                      EKS Cluster                             │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐      │
+│  │   Frontend   │  │   Gateway    │  │  Services    │      │
+│  │   (Next.js)  │  │ (Spring GW)  │  │ (Microservices)│    │
+│  └──────────────┘  └──────────────┘  └──────────────┘      │
+│                                                              │
 │  ┌──────────────────────────────────────────────────────┐   │
 │  │              Kafka (Event Streaming)                 │   │
 │  └──────────────────────────────────────────────────────┘   │
@@ -134,13 +206,44 @@ Kubernetes 배포 자동화 및 GitOps
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
-│              Data Layer (VPC Private Subnet)                │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐       │
-│  │ RDS Aurora   │  │ ElastiCache  │  │  S3 Bucket   │       │
-│  │ (PostgreSQL) │  │   (Valkey)   │  │              │       │
-│  └──────────────┘  └──────────────┘  └──────────────┘       │
+│              Data Layer (VPC Private Subnet)                 │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐      │
+│  │ RDS Aurora   │  │ ElastiCache  │  │  S3 Bucket   │      │
+│  │ (PostgreSQL) │  │   (Valkey)   │  │              │      │
+│  └──────────────┘  └──────────────┘  └──────────────┘      │
 └─────────────────────────────────────────────────────────────┘
 ```
+
+---
+
+## 📚 문서
+
+- [시작하기](https://docs.profectproject.com/getting-started)
+- [API 문서](https://docs.profectproject.com/api)
+- [아키텍처 가이드](https://docs.profectproject.com/architecture)
+- [배포 가이드](https://docs.profectproject.com/deployment)
+- [트러블슈팅](https://docs.profectproject.com/troubleshooting)
+
+---
+
+## 📈 로드맵
+
+### 1차 25.12.22 - 26.01.xx
+- [x] MVP 개발
+- [x] 
+- [ ] 
+- [ ] 
+
+### 2차 26.01.xx - 26.01.30
+- [ ] 마이크로서비스 개발
+- [ ] 
+- [ ] 
+- [ ] 
+
+### 3차 26.02.02 - 26.02.25
+- [ ] 
+- [ ] 
+- [ ] 
 
 ---
 
