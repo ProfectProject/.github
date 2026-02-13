@@ -59,8 +59,6 @@ ProfectProject는 현대적인 클라우드 네이티브 애플리케이션을 �
       <br />
       <sub>Full Stack</sub>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://github.com/cheayoungg">
         <img src="https://github.com/cheayoungg.png" width="100px;" alt=""/>
